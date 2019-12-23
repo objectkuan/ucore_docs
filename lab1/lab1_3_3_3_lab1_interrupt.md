@@ -75,7 +75,7 @@ uint eip;<br>
 }
 </td>
 <td width="50%">
-观察 trapframe 结构与中断产生过程的压桟顺序。<br>
+观察 trapframe 结构与中断产生过程的压栈顺序。<br>
 需要明确 pushal 指令都保存了哪些寄存器，按照什么顺序？<br>
 <br>
 <br>
