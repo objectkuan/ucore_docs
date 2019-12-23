@@ -43,7 +43,7 @@ trap函数（定义在trap.c中）是对中断进行处理的过程，所有的�
 <tr><td>trapasm.S</td><td>trap.c</td></tr>
 <tr>
 <td width="50%">
-1)产生中断后，CPU 跳转到相应的中断处理入口 (vectors)，并在桟中压入相应的 error_code（是否存在与异常号相关） 以及 trap_no，然后跳转到 alltraps 函数入口：
+1)产生中断后，CPU 跳转到相应的中断处理入口 (vectors)，并在栈中压入相应的 error_code（是否存在与异常号相关） 以及 trap_no，然后跳转到 alltraps 函数入口：
 <br>
 注意：此处的跳转是 jmp 过程
 <table>
