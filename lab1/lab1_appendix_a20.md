@@ -41,7 +41,7 @@ Status Register的定义（要用bit 0和bit 1）：
 <tr><td>7</td><td>1=even parity rec'd, 0=odd parity rec'd (should be odd)</td></tr>
 </table>
 
-除了这些资源外，8042还有3个内部端口：Input Port、Outport Port和Test Port，这三个端口的操作都是通过向64h发送命令，然后在60h进行读写的方式完成，其中本文要操作的A20 Gate被定义在Output Port的bit 1上，所以有必要对Outport Port的操作及端口定义做一个说明。
+除了这些资源外，8042还有3个内部端口：Input Port、Output Port和Test Port，这三个端口的操作都是通过向64h发送命令，然后在60h进行读写的方式完成，其中本文要操作的A20 Gate被定义在Output Port的bit 1上，所以有必要对Outport Port的操作及端口定义做一个说明。
 
 - 读Output Port：向64h发送0d0h命令，然后从60h读取Output Port的内容
 - 写Output Port：向64h发送0d1h命令，然后向60h写入Output Port的数据
