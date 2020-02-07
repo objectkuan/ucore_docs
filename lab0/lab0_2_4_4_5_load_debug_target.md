@@ -10,7 +10,7 @@
 
 	(gdb) add-symbol-file android_test/system/bin/linker 0x6fee6180
 
-这样的命令默认是将代码段(.data)段的调试信息加载到0x6fee6180上，当然，你也可以通过“-s”这个参数来指定，比如：
+这样的命令默认是将代码段(.text)段的调试信息加载到0x6fee6180上，当然，你也可以通过“-s”这个参数来指定，比如：
 	(gdb) add-symbol-file android_test/system/bin/linker –s .text 0x6fee6180
 
 这样，在执行到linker中代码时gdb就能够显示出正确的代码和调试信息出来。
