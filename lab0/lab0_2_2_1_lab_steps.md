@@ -16,4 +16,4 @@
 8. 如果实现基本正确（即看到步骤6的输出都是 OK）则生成实验提交软件包，例如执行：make handin
 9. 对于本校学生，把生成的使用提交软件包和实验报告上传到指定的git server，便于助教和老师查看。
  
-> 另外，可以通过”make qemu”让OS实验工程在qemu上运行；可以通过”make debug”或“make debug-nox “命令实现通过gdb远程调试 OS实验工程；通过"make grade"可以看自己完成的对错情况。
+> 另外，可以通过“make qemu”让OS实验工程在qemu上运行；可以通过“make debug”或“make debug-nox”命令实现通过gdb远程调试 OS实验工程；通过“make grade”可以看自己完成的对错情况。
