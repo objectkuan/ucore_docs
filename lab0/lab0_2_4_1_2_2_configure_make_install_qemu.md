@@ -19,5 +19,5 @@ qemu执行程序将缺省安装到 /usr/local/bin 目录下。
  
 建立符号链接文件qemu
 
-	sudo ln –s /usr/local/bin/qemu-system-i386  /usr/local/bin/qemu
+	sudo ln -s /usr/local/bin/qemu-system-i386  /usr/local/bin/qemu
  
